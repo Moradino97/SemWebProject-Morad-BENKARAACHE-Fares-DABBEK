@@ -1,0 +1,257 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/SGTO/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix ex: 		<http://www.example.com/> .
+@prefix geo: 		<http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix : 		<http://visualdataweb.org/SGTO/> .
+@base 			<http://visualdataweb.org/SGTO/> .
+
+<http://visualdataweb.org/SGTO/> rdf:type owl:Ontology ;
+                                 dc:title "My Special GeoSpatial Things Ontology"@en; 
+                                 dc:description "New ontology description"@en; 
+                                 owl:versionInfo "0.1"@en;
+                                 dc:creator "Morad BENKARAACHE and Fraes DABBEK" . 
+#################################################################
+
+###  Property Definitions (Number of Property) 23 ###
+#  --------------------------- Property 0------------------------- 
+:agency_Id rdf:type owl:DatatypeProperty ;
+           rdfs:label "agency_Id"@IRI-based; 
+           rdfs:label "agency_Id"@iri-based; 
+           rdfs:label "agency_Id"@en; 
+           rdfs:domain :Agency;
+           rdfs:range xsd:integer . 
+#  --------------------------- Property 1------------------------- 
+:stop_url rdf:type owl:DatatypeProperty ;
+          rdfs:label "stop_url"@IRI-based; 
+          rdfs:label "stop_url"@iri-based; 
+          rdfs:label "stop_url"@en; 
+          rdfs:domain :TrainStation;
+          rdfs:range xsd:string . 
+#  --------------------------- Property 2------------------------- 
+:route_desc rdf:type owl:DatatypeProperty ;
+            rdfs:label "route_desc"@IRI-based; 
+            rdfs:label "route_desc"@iri-based; 
+            rdfs:label "route_desc"@en; 
+            rdfs:domain :routes;
+            rdfs:range rdfs:Literal . 
+#  --------------------------- Property 3------------------------- 
+:Stop_Long rdf:type owl:DatatypeProperty ;
+           rdfs:label "Stop_Long"@IRI-based; 
+           rdfs:label "Stop_Long"@iri-based; 
+           rdfs:label "Stop_Long"@en; 
+           rdfs:domain :TrainStation;
+           rdfs:range xsd:double . 
+#  --------------------------- Property 4------------------------- 
+:parent_station rdf:type owl:DatatypeProperty ;
+                rdfs:label "parent_station"@IRI-based; 
+                rdfs:label "parent_station"@iri-based; 
+                rdfs:label "parent_station"@en; 
+                rdfs:domain :TrainStation;
+                rdfs:range xsd:integer . 
+#  --------------------------- Property 5------------------------- 
+:route_id rdf:type owl:DatatypeProperty ;
+          rdfs:label "route_id"@IRI-based; 
+          rdfs:label "route_id"@iri-based; 
+          rdfs:label "route_id"@en; 
+          rdfs:domain :routes;
+          rdfs:range xsd:integer . 
+#  --------------------------- Property 6------------------------- 
+:agency_id rdf:type owl:DatatypeProperty ;
+           rdfs:label "agency_id"@IRI-based; 
+           rdfs:label "agency_id"@iri-based; 
+           rdfs:label "agency_id"@en; 
+           rdfs:domain :routes;
+           rdfs:range xsd:integer . 
+#  --------------------------- Property 7------------------------- 
+:route_long_name rdf:type owl:DatatypeProperty ;
+                 rdfs:label "route_long_name"@IRI-based; 
+                 rdfs:label "route_long_name"@iri-based; 
+                 rdfs:label "route_long_name"@en; 
+                 rdfs:domain :routes;
+                 rdfs:range xsd:string . 
+#  --------------------------- Property 8------------------------- 
+:Stop_Name rdf:type owl:DatatypeProperty ;
+           rdfs:label "Stop_Name"@IRI-based; 
+           rdfs:label "Stop_Name"@iri-based; 
+           rdfs:label "Stop_Name"@en; 
+           rdfs:domain :TrainStation;
+           rdfs:range xsd:string . 
+#  --------------------------- Property 9------------------------- 
+:route_short_name rdf:type owl:DatatypeProperty ;
+                  rdfs:label "route_short_name"@IRI-based; 
+                  rdfs:label "route_short_name"@iri-based; 
+                  rdfs:label "route_short_name"@en; 
+                  rdfs:domain :routes;
+                  rdfs:range xsd:string . 
+#  --------------------------- Property 10------------------------- 
+:agency_lang rdf:type owl:DatatypeProperty ;
+             rdfs:label "agency_lang"@IRI-based; 
+             rdfs:label "agency_lang"@iri-based; 
+             rdfs:label "agency_lang"@en; 
+             rdfs:domain :Agency;
+             rdfs:range xsd:string . 
+#  --------------------------- Property 11------------------------- 
+:IdStops rdf:type owl:DatatypeProperty ;
+         rdfs:label "IdStops"@IRI-based; 
+         rdfs:label "IdStops"@iri-based; 
+         rdfs:label "Stop_Id"@en; 
+         rdfs:domain :TrainStation;
+         rdfs:range xsd:integer . 
+#  --------------------------- Property 12------------------------- 
+:Name_desc rdf:type owl:DatatypeProperty ;
+           rdfs:label "Name_desc"@IRI-based; 
+           rdfs:label "Name_desc"@iri-based; 
+           rdfs:label "Name_desc"@en; 
+           rdfs:domain :TrainStation;
+           rdfs:range xsd:string . 
+#  --------------------------- Property 13------------------------- 
+:agency_name rdf:type owl:DatatypeProperty ;
+             rdfs:label "agency_name"@IRI-based; 
+             rdfs:label "agency_name"@iri-based; 
+             rdfs:label "agency_name"@en; 
+             rdfs:domain :Agency;
+             rdfs:range xsd:string . 
+#  --------------------------- Property 14------------------------- 
+:agency_timezone rdf:type owl:DatatypeProperty ;
+                 rdfs:label "agency_timezone"@IRI-based; 
+                 rdfs:label "agency_timezone"@iri-based; 
+                 rdfs:label "agency_timezone"@en; 
+                 rdfs:domain :Agency;
+                 rdfs:range xsd:string . 
+#  --------------------------- Property 15------------------------- 
+:location_type rdf:type owl:DatatypeProperty ;
+               rdfs:label "location_type"@IRI-based; 
+               rdfs:label "location_type"@iri-based; 
+               rdfs:label "location_type"@en; 
+               rdfs:domain :TrainStation;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 16------------------------- 
+:agency_url rdf:type owl:DatatypeProperty ;
+            rdfs:label "agency_url"@IRI-based; 
+            rdfs:label "agency_url"@iri-based; 
+            rdfs:label "agency_url"@en; 
+            rdfs:domain :Agency;
+            rdfs:range xsd:string . 
+#  --------------------------- Property 17------------------------- 
+:Stop_Lat rdf:type owl:DatatypeProperty ;
+          rdfs:label "Stop_Lat"@IRI-based; 
+          rdfs:label "Stop_Lat"@iri-based; 
+          rdfs:label "Stop_Lat"@en; 
+          rdfs:domain :TrainStation;
+          rdfs:range xsd:double . 
+#  --------------------------- Property 18------------------------- 
+:zone_Id rdf:type owl:DatatypeProperty ;
+         rdfs:label "zone_Id"@IRI-based; 
+         rdfs:label "zone_Id"@iri-based; 
+         rdfs:label "zone_Id"@en; 
+         rdfs:domain :TrainStation;
+         rdfs:range xsd:integer . 
+#  --------------------------- Property 19------------------------- 
+:INSEE_REG rdf:type owl:DatatypeProperty ;
+           rdfs:label "INSEE_REG"@en; 
+           rdfs:domain :TrainStation;
+           rdfs:range xsd:integer . 
+#  --------------------------- Property 20------------------------- 
+:INSEE_DEP rdf:type owl:DatatypeProperty ;
+           rdfs:label "INSEE_DEP"@en; 
+           rdfs:domain :TrainStation;
+           rdfs:range xsd:integer . 
+#  --------------------------- Property 21------------------------- 
+:REG_Name rdf:type owl:DatatypeProperty ;
+          rdfs:label "REG_Name"@en; 
+          rdfs:domain :TrainStation;
+          rdfs:range xsd:string . 
+#  --------------------------- Property 22------------------------- 
+:DEP_Name rdf:type owl:DatatypeProperty ;
+          rdfs:label "DEP_Name"@en; 
+          rdfs:domain :TrainStation;
+          rdfs:range xsd:string . 
+###  Class Definitions (Number of Classes) 15 ###
+#  --------------------------- Class  0------------------------- 
+:Bicycle-Sharing rdf:type owl:Class; 
+                 rdfs:subClassOf geo:SpatialThing ;
+                 rdfs:label "Bicycle-Sharing"@IRI-based; 
+                 rdfs:label "Bicycle-Sharing"@en . 
+#  --------------------------- Class  1------------------------- 
+:Agency rdf:type owl:Class; 
+        rdfs:subClassOf geo:SpatialThing ;
+        rdfs:label "Agency"@IRI-based; 
+        rdfs:label "Agency"@iri-based; 
+        rdfs:label "Agency"@en . 
+#  --------------------------- Class  2------------------------- 
+:routes rdf:type owl:Class; 
+        rdfs:subClassOf geo:SpatialThing ;
+        rdfs:label "routes"@IRI-based; 
+        rdfs:label "routes"@iri-based; 
+        rdfs:label "routes"@en . 
+#  --------------------------- Class  3------------------------- 
+:Class33 rdf:type owl:Class; 
+         rdfs:subClassOf geo:SpatialThing ;
+         rdfs:label "Class33"@IRI-based; 
+         rdfs:label "Agency"@en . 
+#  --------------------------- Class  4------------------------- 
+:Post-Office rdf:type owl:Class; 
+             rdfs:subClassOf :Building ;
+             rdfs:label "Post-Office"@IRI-based; 
+             rdfs:label "Post-Office"@en . 
+#  --------------------------- Class  5------------------------- 
+:Cafe rdf:type owl:Class; 
+      rdfs:subClassOf :Building ;
+      rdfs:label "Cafe"@IRI-based; 
+      rdfs:label "Cafe"@en . 
+#  --------------------------- Class  6------------------------- 
+:University rdf:type owl:Class; 
+            rdfs:subClassOf :Building ;
+            rdfs:label "University"@IRI-based; 
+            rdfs:label "University"@en . 
+#  --------------------------- Class  7------------------------- 
+:TrainStation rdf:type owl:Class; 
+              rdfs:subClassOf geo:SpatialThing ;
+              rdfs:label "TrainStation"@en . 
+#  --------------------------- Class  8------------------------- 
+:Shool rdf:type owl:Class; 
+       rdfs:subClassOf :Building ;
+       rdfs:label "Shool"@IRI-based; 
+       rdfs:label "Shool"@en . 
+#  --------------------------- Class  9------------------------- 
+:Building rdf:type owl:Class; 
+          rdfs:subClassOf geo:SpatialThing ;
+          rdfs:label "Building"@IRI-based; 
+          rdfs:label "Building"@en . 
+#  --------------------------- Class  10------------------------- 
+:aireport rdf:type owl:Class; 
+          rdfs:subClassOf geo:SpatialThing ;
+          rdfs:label "aireport"@IRI-based; 
+          rdfs:label "aireport"@en . 
+#  --------------------------- Class  11------------------------- 
+geo:SpatialThing rdf:type owl:Class; 
+                 rdfs:label "SpatialThing"@IRI-based; 
+                 rdfs:label "SpatialThing"@iri-based; 
+                 rdfs:label "SpatialThing"@en . 
+#  --------------------------- Class  12------------------------- 
+:Hospital rdf:type owl:Class; 
+          rdfs:subClassOf :Building ;
+          rdfs:label "Hospital"@IRI-based; 
+          rdfs:label "Hospital"@en . 
+#  --------------------------- Class  13------------------------- 
+:Restaurant rdf:type owl:Class; 
+            rdfs:subClassOf :Building ;
+            rdfs:label "Restaurant"@IRI-based; 
+            rdfs:label "Restaurant"@en . 
+#  --------------------------- Class  14------------------------- 
+:Parking rdf:type owl:Class; 
+         rdfs:subClassOf geo:SpatialThing ;
+         rdfs:label "Parking"@IRI-based; 
+         rdfs:label "Parking"@en . 
