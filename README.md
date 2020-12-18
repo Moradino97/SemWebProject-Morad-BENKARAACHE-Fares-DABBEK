@@ -47,7 +47,7 @@ You have to install fuseki [Click here](https://jena.apache.org/download/index.c
 
 ## The ontology:
 
-You can found the ontology ine the file (SGTO.ttl):
+You can found the ontology ine the file ```SGTO.ttl```
 
 ## Java v10 or greater:
 you have to install java, for this:
@@ -73,7 +73,7 @@ You have to install an IDE to open the project (we used eclipse version JEE)
 
 - Clone the project from this adress "https://github.com/", you can clone it using the command line or download it directly from the website in a zib format
 - You have to install an IDE to open the project (we used eclipse version JEE) 
-- You have to run fuseki, you should be able to test Fuseki by running ./fuseki-server --mem /TGVStations (TGVStations is the name of the dataset) :
+- You have to run fuseki, you should be able to test Fuseki by running ```./fuseki-server --mem /TGVStations``` (TGVStations is the name of the dataset) :
  You will already find the .ttl files in the ```/FromCSVTORDF``` directory, 
  Create a dataset (triplestore) called ```/TGVStations```
  Use the ```/TGVStations.ttl``` file which is located in the ```/FromCSVTORDF``` folder to enter your dataset ```/TGVStations``` (upload the file)
