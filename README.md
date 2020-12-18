@@ -6,9 +6,26 @@
 |Morad BENKARAACHE |  CPS2 |  M2 | 
 |Fares DABBEK| DSC  | M2  |
 
-# Repository structure
+## Repository structure
 
+```
+.
+├── requirements.txt
+├── README.md
+├── Calculation process
+│   ├── V1 [Stabl]
+│   | ├── client.py
+│   | ├── serverEC2.py
+│   └── V2 
+│     ├── client.py
+│     └── serverEC2.py
+└── Image process
+    ├── ProcessingImageDirectory
+    ├── client.py
+    ├── Moon.jpg
+    └── serverEC2.py
 
+```
 
 
 # Requirments
