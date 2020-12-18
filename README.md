@@ -1,3 +1,16 @@
+##          Our team contains 5 members:
+
+
+|Name|  Domain |  Master |  
+|---|---|---|
+|Morad BENKARAACHE |  CPS2 |  M2 | 
+|Fares DABBEK| DSC  | M2  |
+
+# Repository structure
+
+
+
+
 # Requirments
 
 ## Configuration fuseki 
@@ -7,7 +20,7 @@
 
 ## The ontology:
 
--you can found the ontology ine the file (name of the file):
+-you can found the ontology ine the file (SGTO.ttl):
 
 ## Java:
 you have to install java, for this:
