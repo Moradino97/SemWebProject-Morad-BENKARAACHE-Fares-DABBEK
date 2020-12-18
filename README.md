@@ -1,4 +1,21 @@
-##          Our team contains 5 members:
+# Semantic Web Project
+This project aims to exploit the technologies of Semantic Web.
+For this project we used geospatial data and displays in a web application,
+For the GeoSpatial data that we have to consider, we have to consider the TGVStations.
+So for that we convert raw data (csv) from Gare des Train to graph data (RDF) / FromCSVTORDF
+You can find data that we extract to RDF data in the files, like TGVStations.ttl, TrainStations.ttl StasStations ...
+These data to generate use an ontology SGTO.ttl (Special GeoThing Ontology) which is designed to better define geo-spatial data (Like TGV stations), moreover you can consult this data which will be used in our Triplestore / TGVStations
+
+
+
+Regarding the FrontEnd part we have to develop a Web application that allows to exploit this RDF data, in fact:
+We can display this data in a table and also in a Maps. (SELECT querry)
+We can manipulate this data by adding new TGV stations or removing stations (UPDATE querry)
+You can display specific TGV stations (SELECT querry)
+
+This web application also uses RDFa in the data tables of TGV stations.
+
+## Our team contains 2 members:
 
 
 |Name|  Domain |  Master |  
@@ -46,7 +63,7 @@ you have to install java, for this:
 follow the insructions here [Click here] (https://www.java.com/fr/download/help/windows_manual_download.html)
 
 -linux:
-you have to run this line  ``` $ sudo apt-get install default-jre to install java" ``` in the command line 
+you have to run this line  ``` $ sudo apt-get install default-jre to install java ``` in the command line 
 
 
 ## Tomcat
