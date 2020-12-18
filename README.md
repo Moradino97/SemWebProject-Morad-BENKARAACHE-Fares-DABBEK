@@ -1,15 +1,15 @@
-##Requirments
+## Requirments
 
-#Configuration fuseki 
+# Configuration fuseki 
 
 -you have to install fuseki [Click here](https://jena.apache.org/download/index.cgi)
 
 
-#The ontology:
+# The ontology:
 
 -you can found the ontology ine the file (name of the file):
 
-#Java:
+# Java:
 you have to install java, for this:
 
 -windows:
@@ -27,15 +27,16 @@ You have to install appache [Click here] (https://httpd.apache.org/):
 
 
 
-#To run the application
+# To run the application
 -You have to clone the project from this adress "https://github.com/", you can clone it using the command line or download it directly from the website in a zib format
 -You have to install an IDE to open the project (we used eclipse version JEE) 
 -You have to run fuseki, you should be able to test Fuseki by running ./fuseki-server --mem /TGVStations (TGVStations is the name of the dataset)
 -You have to run fuseki inteface  http://localhost:3030/
 -You have to upload into the dataset TGVStations the file (the name of the file) contains the rdf graph 
--
+
 
 you can test the fonctionilities of the project:
+
 -see all the train stations (with the map)
 -add a new train station
 -select a train station
@@ -48,9 +49,7 @@ you can test the fonctionilities of the project:
 
 -Run the project by 
 -You have to access to localhost:8080 to display the project
--
 
 
 
 
-to run the applicaion you have to 
